@@ -17,13 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mediator/mediator_impl.cpp \
+    mediator/mediator_pattern.cpp
 
 HEADERS += \
-    mainwindow.h
+    mediator/mediator_abstractor.h \
+    mediator/mediator_impl.h \
+    mediator/mediator_pattern.h
 
 FORMS += \
-    mainwindow.ui
+    mediator/mediator_pattern.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
