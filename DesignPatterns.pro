@@ -16,14 +16,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    state/context.cpp \
+    state/statea.cpp \
+    state/stateb.cpp \
+    state/statebase.cpp \
+    visitor/clienta.cpp \
+    visitor/clientb.cpp \
+    visitor/clientbase.cpp \
     main.cpp \
     mediator/mediator_impl.cpp \
-    mediator/mediator_pattern.cpp
+    mediator/mediator_pattern.cpp \
+    visitor/visitorbase.cpp
 
 HEADERS += \
+    state/context.h \
+    state/statea.h \
+    state/stateb.h \
+    state/statebase.h \
+    visitor/clienta.h \
+    visitor/clientb.h \
+    visitor/clientbase.h \
     mediator/mediator_abstractor.h \
     mediator/mediator_impl.h \
-    mediator/mediator_pattern.h
+    mediator/mediator_pattern.h \
+    visitor/visitorbase.h
 
 FORMS += \
     mediator/mediator_pattern.ui
